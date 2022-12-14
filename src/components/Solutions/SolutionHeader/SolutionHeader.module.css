@@ -1,15 +1,30 @@
 .image {
-  content: url('https://www.apple.com/in/ipad-keyboards/images/overview/ipad_keyboards_hero__gmkwo4jwfziq_medium_2x.jpg');
+  height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
 }
 
 @media screen and (max-width: 768px) {
   .image {
-    content: url('https://www.apple.com/in/ipad-keyboards/images/overview/ipad_keyboards_hero__gmkwo4jwfziq_medium.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
   }
 }
 
 @media screen and (max-width: 426px) {
   .image {
-    content: url('https://www.apple.com/in/ipad-keyboards/images/overview/ipad_keyboards_hero__gmkwo4jwfziq_small.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
   }
 }

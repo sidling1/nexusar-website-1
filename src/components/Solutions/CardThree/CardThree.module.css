@@ -5,11 +5,14 @@
   border-radius: 25px !important;
   overflow: hidden;
 }
-
+.image {
+  height: 80%;
+  width: 80%;
+}
 .bigHeader {
   font-size: 60px;
   line-height: 1.05;
-  font-family: 'SF Pro Display Heavy';
+  font-family: "Crimson Text SemiBold 600";
 }
 
 .button {

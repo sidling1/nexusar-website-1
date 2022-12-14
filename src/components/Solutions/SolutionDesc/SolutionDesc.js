@@ -1,19 +1,37 @@
-import classes from './SolutionDesc.module.css';
-import { Container } from '@mui/material';
+import classes from "./SolutionDesc.module.css";
+import { Container, Grid} from "@mui/material";
 
 const SolutionDesc = (props) => {
-  const { heading, subHeading, content } = props;
+  const { heading, subHeading, image } = props;
 
   return (
-    <Container sx={{ pt: 8, overflow: 'hidden' }}>
-      <h1 className={classes.bigHeader}>
-        <span style={{ color: '#a1a1a6' }}>{heading}.</span>
-        <br /> {subHeading}.
-      </h1>
-      <h2 style={{ color: '#a1a1a6' }}>{content}</h2>
-      <img className={classes.image} alt="hero" />
-    </Container>
+    <Grid container>
+      <Grid item xs={12} sm={6} lg={6} sx={{alignSelf:"center",justifySelf:"center"}} >
+        <Container sx={{}}>
+          <h1 className={classes.bigHeader}>
+            {heading}.
+            <br /><span style={{ color: "#a1a1a6" }}>{subHeading}</span>.
+          </h1>
+        </Container>
+      </Grid>
+      <Grid item xs={12} sm={6} lg={6} >
+        <Container sx={{overflow: "hidden",alignSelf:"center",justifySelf:"center"}}>
+          <img
+            className={classes.image}
+            alt="hero"
+            src={image}
+            style={{
+              resizeMode: "cover",
+              width: "100%",
+              height: "100%",
+            }}
+          />
+        </Container>
+      </Grid>
+    </Grid>
   );
 };
 
 export default SolutionDesc;
+
+// style={{ color: "#a1a1a6" }}

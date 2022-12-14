@@ -1,34 +1,43 @@
 .card {
-  background: linear-gradient(to bottom, #061420 0%, #151516 100%);
+  background: linear-gradient(to top, #DCDCDC 0%, #b6b6b6 100%);
   color: white !important;
   border-radius: 25px !important;
   overflow: hidden;
 }
-
-.button {
+.bigHeader {
+  font-size: 30px;
+  line-height: 1.05;
+  font-family: "Crimson Text SemiBold 600";
+}
+/* .button {
   background-color: transparent;
   border-width: 2px;
   border-style: solid;
   border-radius: 100px;
   padding: 9px 17px;
   white-space: normal;
-}
+} */
 
 .image {
-  content: url('https://www.apple.com/v/macbook-air/k/images/overview/machine_learning__d8u6dxf5xawm_medium.png');
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {
   .bigHeader {
-    font-size: 60px;
+    font-size: 30px;
   }
 }
 
 @media screen and (max-width: 426px) {
   .image {
-    content: url('https://www.apple.com/v/macbook-air/k/images/overview/machine_learning__d8u6dxf5xawm_small.png');
+    height: auto;
   }
   .button {
     font-size: medium;
+  }
+  .bigHeader {
+    font-size: 15px;
   }
 }
