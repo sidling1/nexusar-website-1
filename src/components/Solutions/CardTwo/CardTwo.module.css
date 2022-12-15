@@ -1,43 +1,50 @@
-.card {
-  background: linear-gradient(to top, #DCDCDC 0%, #b6b6b6 100%);
-  color: white !important;
-  border-radius: 25px !important;
-  overflow: hidden;
-}
-.bigHeader {
-  font-size: 30px;
-  line-height: 1.05;
-  font-family: "Crimson Text SemiBold 600";
-}
-/* .button {
-  background-color: transparent;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 100px;
-  padding: 9px 17px;
-  white-space: normal;
-} */
+.mainblock {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
 
-.image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  background-color: cadetblue;
+  height: fit-content;
+  width:100%;
+  margin: 0;
+}
+.mainblock img {
+  width: 600px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+  z-index: -100;
+}
+.mainblock .image {
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .bigHeader {
-    font-size: 30px;
-  }
+.mainblock button{
+  height:50px;
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  color:cadetblue;
+  font-size: 17px;
+  font-weight: 600;
 }
 
-@media screen and (max-width: 426px) {
-  .image {
-    height: auto;
-  }
-  .button {
-    font-size: medium;
-  }
-  .bigHeader {
-    font-size: 15px;
-  }
+.mainblock button:hover{
+  background-color: rgb(228, 215, 215);
+}
+
+.mainblock .triangle{
+  width: 40px;
+  height: 40px;
+  background: conic-gradient(at 50% 50%, transparent 90deg, red 0, red 225deg, transparent 0);
+}
+
+.mainblock .content{
+  display:flex;
+  flex-direction: column;
+  align-items: left;
+  margin:50px;
 }
