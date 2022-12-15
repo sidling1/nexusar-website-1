@@ -1,50 +1,40 @@
-.mainblock {
+.card {
   display: flex;
   flex-direction: row;
   gap: 0px;
-
-  background-color: cadetblue;
-  height: fit-content;
   width:100%;
-  margin: 0;
+  height:400px;
+  background: #134e5e;
+  color: white !important;
+  border-radius: 25px !important;
+  overflow: hidden;
+  color: white;
 }
-.mainblock img {
-  width: 600px;
-  height: 300px;
-  padding: 0;
-  margin: 0;
-  z-index: -100;
-}
-.mainblock .image {
-  width: fit-content;
-  height: fit-content;
-  padding: 0;
-  margin: 0;
+.bigHeader {
+  font-size: 30px;
+  line-height: 1.05;
+  font-family: "Crimson Text SemiBold 600";
 }
 
-.mainblock button{
-  height:50px;
-  background-color: white;
-  border: none;
-  border-radius: 3px;
-  color:cadetblue;
-  font-size: 17px;
-  font-weight: 600;
+.image {
+  height: 100%;
+  width: 100%;
 }
 
-.mainblock button:hover{
-  background-color: rgb(228, 215, 215);
+@media screen and (max-width: 768px) {
+  .bigHeader {
+    font-size: 30px;
+  }
 }
 
-.mainblock .triangle{
-  width: 40px;
-  height: 40px;
-  background: conic-gradient(at 50% 50%, transparent 90deg, red 0, red 225deg, transparent 0);
-}
-
-.mainblock .content{
-  display:flex;
-  flex-direction: column;
-  align-items: left;
-  margin:50px;
+@media screen and (max-width: 426px) {
+  .image {
+    height: auto;
+  }
+  .button {
+    font-size: medium;
+  }
+  .bigHeader {
+    font-size: 15px;
+  }
 }
