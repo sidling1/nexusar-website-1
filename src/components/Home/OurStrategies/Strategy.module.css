@@ -1,0 +1,10 @@
+:root{
+    --font-size: calc(1.64 * var(--vw));
+    --vw: calc(100vw - 2 * var(--container-padding)) / 100;
+    --container-padding: 8.8vw;
+    --line-height: 1.5em;
+    }
+
+.one{
+    height: auto;
+}
